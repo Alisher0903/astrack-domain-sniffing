@@ -1,0 +1,8 @@
+9200|CRITICAL|Elasticsearch exposed
+6379|CRITICAL|Redis exposed
+27017|CRITICAL|MongoDB exposed
+3306|HIGH|MySQL exposed
+5432|HIGH|PostgreSQL exposed
+8080|MEDIUM|Alternative HTTP service exposed
+8443|MEDIUM|Alternative HTTPS service exposed
+22|MEDIUM|SSH exposed

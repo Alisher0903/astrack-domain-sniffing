@@ -380,3 +380,33 @@ new_ports
 
 removed_ports
 ---------------------------------------------------------------------------------
+
+## Title Change Format
+
+[
+  {
+    "host": "example.com",
+    "old_title": "Welcome",
+    "new_title": "Jenkins"
+  }
+]
+---------------------------------------------------------------------------------
+## Scan Flow
+
+First Scan
+
+Discovery
+→ Snapshot
+
+Second Scan+
+
+Discovery
+→ Snapshot
+→ Diff
+→ Risk
+
+Previous Snapshot Source
+
+snapshots/<domain>/latest.json
+---------------------------------------------------------------------------------
+

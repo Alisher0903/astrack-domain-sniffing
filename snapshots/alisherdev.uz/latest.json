@@ -1,8 +1,71 @@
 {
-  "scan_date": "2026-06-24 23:51:27",
+  "scan_date": "2026-06-25 01:13:56",
   "domain": "alisherdev.uz",
-  "subdomains": [],
-  "ports": {},
-  "titles": {},
+  "subdomains": [
+    "admin.alisherdev.uz",
+    "alisherdev.uz",
+    "main.alisherdev.uz",
+    "www.alisherdev.uz"
+  ],
+  "ports": {
+    "admin.alisherdev.uz": [
+      80,
+      443
+    ],
+    "alisherdev.uz": [
+      80,
+      443
+    ],
+    "main.alisherdev.uz": [
+      80,
+      443
+    ],
+    "www.alisherdev.uz": [
+      80,
+      443
+    ]
+  },
+  "web": {
+    "admin.alisherdev.uz": {
+      "status": "200",
+      "title": "Portfolio Admin Panel",
+      "url": "https://admin.alisherdev.uz",
+      "webserver": "Vercel",
+      "tech": [
+        "HSTS",
+        "Vercel"
+      ]
+    },
+    "www.alisherdev.uz": {
+      "status": "200",
+      "title": "Alisher Sodiqov | Software Developer",
+      "url": "https://www.alisherdev.uz",
+      "webserver": "Vercel",
+      "tech": [
+        "HSTS",
+        "Vercel"
+      ]
+    },
+    "main.alisherdev.uz": {
+      "status": "404",
+      "title": "",
+      "url": "https://main.alisherdev.uz",
+      "webserver": "Vercel",
+      "tech": [
+        "HSTS",
+        "Vercel"
+      ]
+    },
+    "alisherdev.uz": {
+      "status": "200",
+      "title": "Alisher Sodiqov | Software Developer",
+      "url": "https://alisherdev.uz",
+      "webserver": "Vercel",
+      "tech": [
+        "HSTS",
+        "Vercel"
+      ]
+    }
+  },
   "risk_findings": []
 }

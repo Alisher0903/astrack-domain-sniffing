@@ -55,21 +55,54 @@ REMOVED_PORTS=$(jq -n \
     ]
   ')
 
+NEW_WEB_HOSTS=$(jq -n \
+  --slurpfile current "$CURRENT" \
+  --slurpfile previous "$PREVIOUS" '
+    ($current[0].web // {}) as $c |
+    ($previous[0].web // {}) as $p |
+    [
+      $c
+      | keys[]
+      | . as $host
+      | select(($p | has($host)) | not)
+    ]
+  ')
+
+TITLE_CHANGES=$(jq -n \
+  --slurpfile current "$CURRENT" \
+  --slurpfile previous "$PREVIOUS" '
+    ($current[0].web // {}) as $c |
+    ($previous[0].web // {}) as $p |
+    [
+      $c
+      | to_entries[]
+      | .key as $host
+      | select($p | has($host))
+      | select(
+          ($p[$host].title // "") != (.value.title // "")
+        )
+      | {
+          host: $host,
+          old_title: ($p[$host].title // ""),
+          new_title: (.value.title // "")
+        }
+    ]
+  ')
+
 jq -n \
   --argjson new_subdomains "$NEW_SUBDOMAINS" \
   --argjson removed_subdomains "$REMOVED_SUBDOMAINS" \
   --argjson new_ports "$NEW_PORTS" \
   --argjson removed_ports "$REMOVED_PORTS" \
+  --argjson new_web_hosts "$NEW_WEB_HOSTS" \
+  --argjson title_changes "$TITLE_CHANGES" \
   '{
       new_subdomains: $new_subdomains,
       removed_subdomains: $removed_subdomains,
-
       new_ports: $new_ports,
       removed_ports: $removed_ports,
-
-      new_web_hosts: [],
-
-      title_changes: []
+      new_web_hosts: $new_web_hosts,
+      title_changes: $title_changes
    }' > reports/diff.json
 
 rm -f "$CURRENT_SUBS" "$PREVIOUS_SUBS"

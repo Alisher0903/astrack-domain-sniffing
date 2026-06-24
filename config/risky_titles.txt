@@ -1,0 +1,7 @@
+Jenkins|HIGH|Jenkins exposed
+Grafana|HIGH|Grafana exposed
+Kibana|HIGH|Kibana exposed
+GitLab|HIGH|GitLab exposed
+phpMyAdmin|HIGH|phpMyAdmin exposed
+SonarQube|HIGH|SonarQube exposed
+Elasticsearch|CRITICAL|Elasticsearch web interface exposed

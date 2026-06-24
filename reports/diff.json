@@ -1,20 +1,21 @@
 {
   "new_subdomains": [
-    "dev.hackerone.com"
+    "alisherdev.uz"
   ],
   "removed_subdomains": [],
   "new_ports": [
     {
-      "host": "api.hackerone.com",
-      "port": 8443
-    }
-  ],
-  "removed_ports": [
-    {
-      "host": "api.hackerone.com",
+      "host": "alisherdev.uz",
       "port": 80
+    },
+    {
+      "host": "alisherdev.uz",
+      "port": 443
     }
   ],
-  "new_web_hosts": [],
+  "removed_ports": [],
+  "new_web_hosts": [
+    "alisherdev.uz"
+  ],
   "title_changes": []
 }
