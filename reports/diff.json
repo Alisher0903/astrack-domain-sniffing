@@ -1,0 +1,20 @@
+{
+  "new_subdomains": [
+    "dev.hackerone.com"
+  ],
+  "removed_subdomains": [],
+  "new_ports": [
+    {
+      "host": "api.hackerone.com",
+      "port": 8443
+    }
+  ],
+  "removed_ports": [
+    {
+      "host": "api.hackerone.com",
+      "port": 80
+    }
+  ],
+  "new_web_hosts": [],
+  "title_changes": []
+}

@@ -1,0 +1,14 @@
+a.ns.hackerone.com:53,80,443,8080
+api.hackerone.com:80,443,8080
+b.ns.hackerone.com:53,80,443,8080
+docs.hackerone.com:80,443,8080
+gslink.hackerone.com:80,443
+hackerone.com:80,443,8080
+mta-sts.forwarding.hackerone.com:80,443
+mta-sts.hackerone.com:80,443
+mta-sts.managed.hackerone.com:80,443
+pmbounces.hackerone.com:80
+supportahackerone.com:80,443,8080
+support.hackerone.com:80,443,8080
+wearehackerone.com:80,443,8080
+www.hackerone.com:80,443,8080

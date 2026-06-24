@@ -1,0 +1,252 @@
+{
+  "scan_date": "2026-06-25 00:06:27",
+  "domain": "hackerone.com",
+  "subdomains": [
+    "a.ns.hackerone.com",
+    "api.hackerone.com",
+    "autodiscover.hackerone.com",
+    "b.ns.hackerone.com",
+    "design.hackerone.com",
+    "docs.hackerone.com",
+    "events.hackerone.com",
+    "go.hackerone.com",
+    "gslink.hackerone.com",
+    "hackerone.com",
+    "info.hackerone.com",
+    "links.hackerone.com",
+    "mail2.hackerone.com",
+    "mail.hackerone.com",
+    "managed.hackerone.com",
+    "mta-sts.forwarding.hackerone.com",
+    "mta-sts.hackerone.com",
+    "mta-sts.managed.hackerone.com",
+    "my.hackerone.com",
+    "ns2.hackerone.com",
+    "ns3.hackerone.com",
+    "ns.hackerone.com",
+    "pmbounces.hackerone.com",
+    "supportahackerone.com",
+    "support.hackerone.com",
+    "wearehackerone.com",
+    "websockets.hackerone.com",
+    "www.hackerone.com"
+  ],
+  "ports": {
+    "a.ns.hackerone.com": [
+      53,
+      80,
+      443,
+      8080
+    ],
+    "api.hackerone.com": [
+      80,
+      443,
+      8080
+    ],
+    "b.ns.hackerone.com": [
+      53,
+      80,
+      443,
+      8080
+    ],
+    "docs.hackerone.com": [
+      80,
+      443,
+      8080
+    ],
+    "gslink.hackerone.com": [
+      80,
+      443
+    ],
+    "hackerone.com": [
+      80,
+      443,
+      8080
+    ],
+    "mta-sts.forwarding.hackerone.com": [
+      80,
+      443
+    ],
+    "mta-sts.hackerone.com": [
+      80,
+      443
+    ],
+    "mta-sts.managed.hackerone.com": [
+      80,
+      443
+    ],
+    "pmbounces.hackerone.com": [
+      80
+    ],
+    "supportahackerone.com": [
+      80,
+      443,
+      8080
+    ],
+    "support.hackerone.com": [
+      80,
+      443,
+      8080
+    ],
+    "wearehackerone.com": [
+      80,
+      443,
+      8080
+    ],
+    "www.hackerone.com": [
+      80,
+      443,
+      8080
+    ]
+  },
+  "web": {
+    "mta-sts.hackerone.com": {
+      "status": "404",
+      "title": "Page not found · GitHub Pages",
+      "url": "https://mta-sts.hackerone.com",
+      "webserver": "GitHub.com",
+      "tech": [
+        "Fastly",
+        "GitHub Pages",
+        "Varnish"
+      ]
+    },
+    "mta-sts.managed.hackerone.com": {
+      "status": "404",
+      "title": "Page not found · GitHub Pages",
+      "url": "https://mta-sts.managed.hackerone.com",
+      "webserver": "GitHub.com",
+      "tech": [
+        "Fastly",
+        "GitHub Pages",
+        "Varnish"
+      ]
+    },
+    "gslink.hackerone.com": {
+      "status": "404",
+      "title": "404 Not Found",
+      "url": "https://gslink.hackerone.com",
+      "webserver": "nginx",
+      "tech": [
+        "Amazon CloudFront",
+        "Amazon Web Services",
+        "Nginx"
+      ]
+    },
+    "api.hackerone.com": {
+      "status": "200",
+      "title": "HackerOne API",
+      "url": "https://api.hackerone.com",
+      "webserver": "cloudflare",
+      "tech": [
+        "Algolia",
+        "Cloudflare",
+        "HSTS",
+        "jQuery",
+        "jsDelivr"
+      ]
+    },
+    "mta-sts.forwarding.hackerone.com": {
+      "status": "404",
+      "title": "Page not found · GitHub Pages",
+      "url": "https://mta-sts.forwarding.hackerone.com",
+      "webserver": "GitHub.com",
+      "tech": [
+        "Fastly",
+        "GitHub Pages",
+        "Varnish"
+      ]
+    },
+    "docs.hackerone.com": {
+      "status": "200",
+      "title": "Home | HackerOne Help Center",
+      "url": "https://docs.hackerone.com",
+      "webserver": "cloudflare",
+      "tech": [
+        "Cloudflare",
+        "HSTS"
+      ]
+    },
+    "www.hackerone.com": {
+      "status": "200",
+      "title": "HackerOne | Leader in Continuous Threat Exposure Management | Security for AI",
+      "url": "https://www.hackerone.com",
+      "webserver": "cloudflare",
+      "tech": [
+        "Cloudflare",
+        "Drupal",
+        "Fastly",
+        "Google Tag Manager",
+        "HSTS",
+        "MariaDB",
+        "Nginx",
+        "PHP",
+        "Pantheon",
+        "Varnish",
+        "Wistia",
+        "jQuery"
+      ]
+    },
+    "wearehackerone.com": {
+      "status": "200",
+      "title": "Hacker Email Alias | HackerOne Help Center",
+      "url": "https://wearehackerone.com",
+      "webserver": "cloudflare",
+      "tech": [
+        "Cloudflare",
+        "HSTS",
+        "React"
+      ]
+    },
+    "supportahackerone.com": {
+      "status": "200",
+      "title": "HackerOne | Leader in Continuous Threat Exposure Management | Security for AI",
+      "url": "https://supportahackerone.com",
+      "webserver": "cloudflare",
+      "tech": [
+        "Cloudflare",
+        "Drupal",
+        "Fastly",
+        "Google Tag Manager",
+        "HSTS",
+        "MariaDB",
+        "Nginx",
+        "PHP",
+        "Pantheon",
+        "Varnish",
+        "Wistia",
+        "jQuery"
+      ]
+    },
+    "hackerone.com": {
+      "status": "200",
+      "title": "HackerOne | Leader in Continuous Threat Exposure Management | Security for AI",
+      "url": "https://hackerone.com",
+      "webserver": "cloudflare",
+      "tech": [
+        "Cloudflare",
+        "Drupal",
+        "Fastly",
+        "Google Tag Manager",
+        "HSTS",
+        "MariaDB",
+        "Nginx",
+        "PHP",
+        "Pantheon",
+        "Varnish",
+        "Wistia",
+        "jQuery"
+      ]
+    },
+    "pmbounces.hackerone.com": {
+      "status": "200",
+      "title": "Postmark — Email delivery for web apps",
+      "url": "http://pmbounces.hackerone.com",
+      "webserver": "nginx/1.30.1",
+      "tech": [
+        "Nginx:1.30.1"
+      ]
+    }
+  },
+  "risk_findings": []
+}
