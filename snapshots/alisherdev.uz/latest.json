@@ -1,18 +1,13 @@
 {
-  "scan_date": "2026-06-25 01:13:56",
+  "scan_date": "2026-06-25 01:33:34",
   "domain": "alisherdev.uz",
   "subdomains": [
     "admin.alisherdev.uz",
-    "alisherdev.uz",
     "main.alisherdev.uz",
     "www.alisherdev.uz"
   ],
   "ports": {
     "admin.alisherdev.uz": [
-      80,
-      443
-    ],
-    "alisherdev.uz": [
       80,
       443
     ],
@@ -50,16 +45,6 @@
       "status": "404",
       "title": "",
       "url": "https://main.alisherdev.uz",
-      "webserver": "Vercel",
-      "tech": [
-        "HSTS",
-        "Vercel"
-      ]
-    },
-    "alisherdev.uz": {
-      "status": "200",
-      "title": "Alisher Sodiqov | Software Developer",
-      "url": "https://alisherdev.uz",
       "webserver": "Vercel",
       "tech": [
         "HSTS",

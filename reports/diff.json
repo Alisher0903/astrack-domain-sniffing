@@ -1,21 +1,8 @@
 {
-  "new_subdomains": [
-    "alisherdev.uz"
-  ],
+  "new_subdomains": [],
   "removed_subdomains": [],
-  "new_ports": [
-    {
-      "host": "alisherdev.uz",
-      "port": 80
-    },
-    {
-      "host": "alisherdev.uz",
-      "port": 443
-    }
-  ],
+  "new_ports": [],
   "removed_ports": [],
-  "new_web_hosts": [
-    "alisherdev.uz"
-  ],
+  "new_web_hosts": [],
   "title_changes": []
 }

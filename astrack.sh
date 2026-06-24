@@ -43,6 +43,15 @@ if [[ -n "$PREVIOUS_SNAPSHOT" ]]; then
     echo "[*] Running risk engine..."
     ./modules/risk.sh reports/diff.json
 
+    echo "[*] Generating HTML report..."
+    ./modules/report.sh
+
+    if command -v xdg-open >/dev/null 2>&1; then
+      xdg-open reports/report.html >/dev/null 2>&1 &
+    else
+      echo "[INFO] Open manually: reports/report.html"
+    fi
+
     rm -f "$PREVIOUS_SNAPSHOT"
 
 else

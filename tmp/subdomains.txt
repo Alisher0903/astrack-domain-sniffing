@@ -1,4 +1,12 @@
-admin.alisherdev.uz
-alisherdev.uz
-main.alisherdev.uz
-www.alisherdev.uz
+chat.haad.ai
+haad.ai
+instagram.haad.ai
+labs.haad.ai
+ovirt.haad.ai
+payment.haad.ai
+road.haad.ai
+special.haad.ai
+survey.haad.ai
+validate.haad.ai
+wtf.haad.ai
+www.haad.ai

@@ -409,4 +409,12 @@ Previous Snapshot Source
 
 snapshots/<domain>/latest.json
 ---------------------------------------------------------------------------------
+Report Engine
 
+Inputs:
+- diff.json
+- risk.json
+
+Output:
+- report.html
+---------------------------------------------------------------------------------

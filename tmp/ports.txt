@@ -1,4 +1,7 @@
-admin.alisherdev.uz:80,443
-alisherdev.uz:80,443
-main.alisherdev.uz:80,443
-www.alisherdev.uz:80,443
+haad.ai:80,443
+instagram.haad.ai:80,443
+payment.haad.ai:22,80,443
+road.haad.ai:53,80,443,1723
+special.haad.ai:22,80,443
+validate.haad.ai:22,80,443
+www.haad.ai:80,443
