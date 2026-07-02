@@ -1,7 +1,6 @@
 tmp/*
 reports/*
 snapshots/*
-logs/*
 
 *.bak
 .DS_Store

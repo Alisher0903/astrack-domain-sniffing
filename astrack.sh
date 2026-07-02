@@ -46,11 +46,12 @@ if [[ -n "$PREVIOUS_SNAPSHOT" ]]; then
     echo "[*] Generating HTML report..."
     ./modules/report.sh
 
-    if command -v xdg-open >/dev/null 2>&1; then
-      xdg-open reports/report.html >/dev/null 2>&1 &
-    else
-      echo "[INFO] Open manually: reports/report.html"
-    fi
+    # BU QISMDA AUTO BROWSERDA OCHILISHI UCHUN. NEW VERSION UCHUN.
+    # if command -v xdg-open >/dev/null 2>&1; then
+    #   xdg-open reports/report.html >/dev/null 2>&1 &
+    # else
+    #   echo "[INFO] Open manually: reports/report.html"
+    # fi
 
     rm -f "$PREVIOUS_SNAPSHOT"
 

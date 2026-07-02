@@ -1,0 +1,47 @@
+name: 🌥 Sync queries from Public Templates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */12 * * *' # Runs every 12 hours
+
+jobs:
+  sync-repositories:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Clone nuclei-templates Repository
+      run: git clone https://github.com/projectdiscovery/nuclei-templates
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install Python Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install ruamel.yaml
+
+    - name: Run mapqueries.py Script
+      run: |
+        python .github/scripts/mapqueries.py -tdir ${{ github.workspace }}/nuclei-templates -out ${{ github.workspace }}/QUERIES.yaml -ignore ${{ github.workspace }}/.ignore
+
+    - name: Commit and Push Changes to awesome-search-queries
+      env:
+        GIT_AUTHOR_EMAIL: bot@projectdiscovery.io
+        GIT_AUTHOR_NAME: '[PDBot]'
+        GIT_COMMITTER_EMAIL: bot@projectdiscovery.io
+        GIT_COMMITTER_NAME: '[PDBot]'
+        GIT_TERMINAL_PROMPT: "0"
+      run: |
+        git config user.name '[PDBot]'
+        git config user.email 'bot@projectdiscovery.io'
+        git add QUERIES.yaml
+        if git diff --cached --exit-code; then
+          echo "No changes to commit in awesome-search-queries"
+          exit 0
+        fi
+        git commit -m "Syncing queries from Templates"
+        git push

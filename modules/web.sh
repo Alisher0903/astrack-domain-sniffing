@@ -1,7 +1,9 @@
 #!/bin/bash
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 INPUT_FILE="$1"
-HTTPX_BIN="$HOME/go/bin/httpx"
+HTTPX_BIN="$SCRIPT_DIR/../go/bin/httpx"
 
 if [[ -z "$INPUT_FILE" ]]; then
     echo "Usage: $0 <subdomains_file>"
